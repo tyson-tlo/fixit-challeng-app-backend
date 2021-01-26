@@ -16,6 +16,7 @@ class ClientJobsTableSeeder extends Seeder
     {
         $job = ClientJob::updateOrCreate(['id' => 1], [
             'user_id' => 1,
+            'service_id' => 1,
             'client_address_id' => 1,
             'details' => 'These are some details about the job in question',
             'scheduled' => '2021-05-03'
